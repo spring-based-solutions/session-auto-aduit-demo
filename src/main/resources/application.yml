@@ -1,0 +1,12 @@
+spring:
+  ## 数据库链接配置
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/example?&characterEncoding=utf8&serverTimezone=GMT
+    username: root
+    password: root
+  jpa:
+    show-sql: true # 显示执行的SQL
+    hibernate:
+      ddl-auto: update # 生产环境建议使用validate代替
+    database-platform: org.hibernate.dialect.MySQL57Dialect
